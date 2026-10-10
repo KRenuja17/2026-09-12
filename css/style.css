@@ -1,9 +1,73 @@
-        /* element selector */
-        h1 {
-            background-color: orange;
-            color: blue;
-            text-align: center;
-        }
-        p{
-            background-color: blueviolet;
-        }
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+     background-color: orange;
+     color: blue;
+     text-align: center;
+ }
+
+ p {
+     background-color: blueviolet;
+   
+ }
+
+ body{
+    background-color: rgb(172, 174, 171);
+    font-family: 'Courier New', Courier, monospace;
+   ;
+ }
+
+ .bg-color{
+    background-color: black;
+    color: white;
+ }
+
+ /* element selectors
+    class selectors - use dote(.)
+    id selectors - use hash(#)
+    global selectors - use asterisk(*)
+     */
+
+/* #bg-p-color{
+    background-color: bisque;
+/* } */
+
+/* css properties */
+*{
+    margin: 0;
+}
+
+.bg-h1-one {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+.bg-h1-two {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 25px 55px 5px 80px;  /* top right bottom left */
+    /* padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 50px; */
+
+   margin: 50px 100px 20px 15px;  /* top right bottom left */
+}
+
+body{
+    background-color: rgb(172, 174, 171);
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('../img/pexels-rdne-8474497.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+ }
