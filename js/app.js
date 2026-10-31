@@ -92,3 +92,11 @@ let y = "10";
 console.log(x === y); // Strict equality operator (checks value and type)
 console.log(x == y);
 
+// -------------------- Logical Operators --------------------//
+
+if(false || false){
+    console.log("Working");
+}else{
+    console.log("not working");
+}
+
