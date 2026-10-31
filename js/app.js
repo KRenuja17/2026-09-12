@@ -160,36 +160,78 @@
 // }
 
 // -------------------- Do-While Loops --------------------//
-let i = 0;
-while(i<5){
-    console.log(i);
-    i++;
+// let i = 0;
+// while(i<5){
+//     console.log(i);
+//     i++;
+// }
+
+// console.log("--------------------------------------------------");
+
+// let k = 1;
+// while(k<5){
+//     console.log(k);
+//     k++;
+// }
+
+// console.log("--------------------------------------------------");
+
+
+// //do while loop
+
+// let j = 0;
+// do{
+//     console.log(j);
+//     j++;
+// } while(j<5);
+
+// console.log("------------------------------------------------------");
+
+
+// let p = 10;
+// do{
+//     console.log(p);
+//     p++;
+// } while(p<5);
+
+// ----------------------------- Functions --------------------// 
+// normal function
+function myFunction() {
+    console.log("Hello world");
 }
 
-console.log("--------------------------------------------------");
+myFunction();
 
-let k = 1;
-while(k<5){
-    console.log(k);
-    k++;
+// function with parameters
+function getSum(num1, num2) {
+    return num1 + num2;
 }
 
-console.log("--------------------------------------------------");
+console.log(getSum(10, 20));
+
+//functions with variable 
+let sum = function(num1, num2){
+    return num1 + num2;
+}
+
+console.log(sum(5,5));
+
+// arrow function  - method 04 
+let pluSum = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(pluSum(12,12));
 
 
-//do while loop
-
-let j = 0;
-do{
-    console.log(j);
-    j++;
-} while(j<5);
-
-console.log("------------------------------------------------------");
+let plusSum = (num1, num2) => num1 + num2;
 
 
-let p = 10;
-do{
-    console.log(p);
-    p++;
-} while(p<5);
+let sample = txtValue =>{
+    return txtValue;
+}
+
+console.log(sample("Hii saman"));
+
+let sample1 = txtValue => txtValue;
+
+console.log(sample1("Hii kamal"));
