@@ -73,3 +73,22 @@ let student = [
 console.log(student);
 console.log(student[0].marks[0].subject);
 console.log(student[0].marks[1].subject);
+
+
+// -------------------- Arithmetic Operators --------------------//
+let a = 10;
+a++;
+console.log(a); 
+
+let b = 5;
+
+let sum = a + b;
+console.log(sum);
+
+// -------------------- Comparison Operators --------------------//
+let x = 10;
+let y = "10";
+
+console.log(x === y); // Strict equality operator (checks value and type)
+console.log(x == y);
+
