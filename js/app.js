@@ -33,70 +33,93 @@
 // console.log(person.name);
 // console.log(person.age);
 
-class Customer {
-    name;
-    age;
-    isStudent;
+// class Customer {
+//     name;
+//     age;
+//     isStudent;
 
-    constructor(name, age, isStudent) {
-        this.name = name;
-        this.age = age;
-        this.isStudent = isStudent;
-    }
-}
+//     constructor(name, age, isStudent) {
+//         this.name = name;
+//         this.age = age;
+//         this.isStudent = isStudent;
+//     }
+// }
 
-let custoemr1 = new Customer("saman", 20, true);
-console.log(custoemr1);
+// let custoemr1 = new Customer("saman", 20, true);
+// console.log(custoemr1);
 
-let custoemr2 = new Customer("kamal", 25, false);
-console.log(custoemr2);
+// let custoemr2 = new Customer("kamal", 25, false);
+// console.log(custoemr2);
 
 
-let student = [
-    {
-        name: "saman",
-        age: 20,
-        isStudent: true,
-        marks: [
-            {
-                subject: "Math",
-                mark: 90
-            },
-            {
-                subject: "Science",
-                mark: 85
-            }
+// let student = [
+//     {
+//         name: "saman",
+//         age: 20,
+//         isStudent: true,
+//         marks: [
+//             {
+//                 subject: "Math",
+//                 mark: 90
+//             },
+//             {
+//                 subject: "Science",
+//                 mark: 85
+//             }
 
-        ]
-    }
-]
-console.log(student);
-console.log(student[0].marks[0].subject);
-console.log(student[0].marks[1].subject);
+//         ]
+//     }
+// ]
+// console.log(student);
+// console.log(student[0].marks[0].subject);
+// console.log(student[0].marks[1].subject);
 
 
 // -------------------- Arithmetic Operators --------------------//
-let a = 10;
-a++;
-console.log(a); 
+// let a = 10;
+// a++;
+// console.log(a); 
 
-let b = 5;
+// let b = 5;
 
-let sum = a + b;
-console.log(sum);
+// let sum = a + b;
+// console.log(sum);
 
 // -------------------- Comparison Operators --------------------//
-let x = 10;
-let y = "10";
+// let x = 10;
+// let y = "10";
 
-console.log(x === y); // Strict equality operator (checks value and type)
-console.log(x == y);
+// console.log(x === y); // Strict equality operator (checks value and type)
+// console.log(x == y);
 
 // -------------------- Logical Operators --------------------//
 
-if(false || false){
-    console.log("Working");
+// if(false || false){
+//     console.log("Working");
+// }else{
+//     console.log("not working");
+// }
+
+//-------------------- Conditional Statements --------------------//
+let x = 10;
+let y = 20;
+
+if(x>y){
+    console.log("x is grater than y");
 }else{
-    console.log("not working");
+    console.log("x is less than y");
+}
+
+mark = 10;
+if (mark >= 90){
+    console.log("A+");
+}else if(mark >= 75){
+    console.log("B");
+}else if(mark >= 65){
+    console.log("C");
+}else if(mark >= 50){
+    console.log("D");
+}else{
+    console.log("F");
 }
 
