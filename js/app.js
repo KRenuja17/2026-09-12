@@ -101,25 +101,95 @@
 // }
 
 //-------------------- Conditional Statements --------------------//
-let x = 10;
-let y = 20;
+// let x = 10;
+// let y = 20;
 
-if(x>y){
-    console.log("x is grater than y");
-}else{
-    console.log("x is less than y");
+// if(x>y){
+//     console.log("x is grater than y");
+// }else{
+//     console.log("x is less than y");
+// }
+
+// mark = 10;
+// if (mark >= 90){
+//     console.log("A+");
+// }else if(mark >= 75){
+//     console.log("B");
+// }else if(mark >= 65){
+//     console.log("C");
+// }else if(mark >= 50){
+//     console.log("D");
+// }else{
+//     console.log("F");
+// }
+
+//-------------------- Switch Statement --------------------//
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log("Invalid day");
+// }
+
+// // -------------------- For Loops --------------------//
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+// }
+
+// // -------------------- While Loops --------------------//
+// let j = 0;
+// while (j < 5) {
+//     console.log(j);
+//     j++;
+// }
+
+// -------------------- Do-While Loops --------------------//
+let i = 0;
+while(i<5){
+    console.log(i);
+    i++;
 }
 
-mark = 10;
-if (mark >= 90){
-    console.log("A+");
-}else if(mark >= 75){
-    console.log("B");
-}else if(mark >= 65){
-    console.log("C");
-}else if(mark >= 50){
-    console.log("D");
-}else{
-    console.log("F");
+console.log("--------------------------------------------------");
+
+let k = 1;
+while(k<5){
+    console.log(k);
+    k++;
 }
 
+console.log("--------------------------------------------------");
+
+
+//do while loop
+
+let j = 0;
+do{
+    console.log(j);
+    j++;
+} while(j<5);
+
+console.log("------------------------------------------------------");
+
+
+let p = 10;
+do{
+    console.log(p);
+    p++;
+} while(p<5);
