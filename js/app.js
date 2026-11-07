@@ -196,42 +196,61 @@
 
 // ----------------------------- Functions --------------------// 
 // normal function
-function myFunction() {
-    console.log("Hello world");
+// function myFunction() {
+//     console.log("Hello world");
+// }
+
+// myFunction();
+
+// // function with parameters
+// function getSum(num1, num2) {
+//     return num1 + num2;
+// }
+
+// console.log(getSum(10, 20));
+
+// //functions with variable 
+// let sum = function(num1, num2){
+//     return num1 + num2;
+// }
+
+// console.log(sum(5,5));
+
+// // arrow function  - method 04 
+// let pluSum = (num1, num2) => {
+//     return num1 + num2;
+// }
+// console.log(pluSum(12,12));
+
+
+// let plusSum = (num1, num2) => num1 + num2;
+
+
+// let sample = txtValue =>{
+//     return txtValue;
+// }
+
+// console.log(sample("Hii saman"));
+
+// let sample1 = txtValue => txtValue;
+
+// console.log(sample1("Hii kamal"));
+
+//-----------------------How an object is created in java using a class and a constuct --------------------//
+class customer{
+    name;
+    age;
+    address;
+
+    constructor(name, age, address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
 }
 
-myFunction();
+let customer1 = new customer("saman", 20, "New York");
+let customer2 = new customer("kamal", 25, "Los Angeles");
 
-// function with parameters
-function getSum(num1, num2) {
-    return num1 + num2;
-}
-
-console.log(getSum(10, 20));
-
-//functions with variable 
-let sum = function(num1, num2){
-    return num1 + num2;
-}
-
-console.log(sum(5,5));
-
-// arrow function  - method 04 
-let pluSum = (num1, num2) => {
-    return num1 + num2;
-}
-console.log(pluSum(12,12));
-
-
-let plusSum = (num1, num2) => num1 + num2;
-
-
-let sample = txtValue =>{
-    return txtValue;
-}
-
-console.log(sample("Hii saman"));
-
-let sample1 = txtValue => txtValue;
-
-console.log(sample1("Hii kamal"));
+console.log(customer1);
+console.log(customer2);
