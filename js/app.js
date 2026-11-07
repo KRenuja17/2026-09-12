@@ -237,20 +237,84 @@
 // console.log(sample1("Hii kamal"));
 
 //-----------------------How an object is created in java using a class and a constuct --------------------//
-class customer{
-    name;
-    age;
-    address;
+// class customer{
+//     name;
+//     age;
+//     address;
 
-    constructor(name, age, address){
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+//     constructor(name, age, address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// }
+
+// let customer1 = new customer("saman", 20, "New York");
+// let customer2 = new customer("kamal", 25, "Los Angeles");
+
+// console.log(customer1);
+// console.log(customer2);
+
+
+// ----------------- DOM Manipulation (DOM - Document Object Model) -----------------
+
+// console.log(document);
+
+// document.write("<h1>Hello World</h1>");
+// document.write("<h2>Hello World</h2>");
+
+
+
+// let number = 0;
+// function btnClickMeOnAction(){
+
+//     title.innerText = "Saman Kumara - " + number++;
+// }
+
+// -- Number Count APP -- 
+
+// let number = 0;
+// function btnIncrementOnAction(){
+//   number++;
+//   numberCount.innerText = "Number Count - " +number;
+// }
+
+// function btnDecrementOnAction(){
+//    number--;
+//    numberCount.innerText = "Number Count - " +number;
+
+// }
+
+
+// function btnSubmitOnAction(){
+//    let txtName = document.getElementById("txtName");
+//    console.log(txtName.value);
+
+//    submitedName.innerText = "My Name is - " + txtName.value;
+   
+// }
+
+
+function btnAddOnAction(){
+    document.getElementById("txtNum1");
+    let inputnum1 = document.getElementById("txtNum1");
+    let inputnum2 = document.getElementById("txtNum2");
+
+    console.log(inputnum1.value);
+    console.log(inputnum2.value);
+    let result = parseFloat(inputnum1.value) + parseFloat(inputnum2.value);
+    document.getElementById("outPut").innerText = "Out Put Is = " + result;
+    console.log(result);
+
 }
 
-let customer1 = new customer("saman", 20, "New York");
-let customer2 = new customer("kamal", 25, "Los Angeles");
+function btnSubtractOnAction(){
+    let inputnum1 = document.getElementById("txtNum1");
+    let inputnum2 = document.getElementById("txtNum2");
 
-console.log(customer1);
-console.log(customer2);
+    console.log(inputnum1.value);
+    console.log(inputnum2.value);
+    let result = parseFloat(inputnum1.value) - parseFloat(inputnum2.value);
+    document.getElementById("outPut").innerText = "Out Put Is = " + result;
+    console.log(result);
+}
