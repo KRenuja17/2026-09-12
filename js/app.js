@@ -295,26 +295,95 @@
 // }
 
 
-function btnAddOnAction(){
-    document.getElementById("txtNum1");
-    let inputnum1 = document.getElementById("txtNum1");
-    let inputnum2 = document.getElementById("txtNum2");
+// function btnAddOnAction(){
+//     document.getElementById("txtNum1");
+//     let inputnum1 = document.getElementById("txtNum1");
+//     let inputnum2 = document.getElementById("txtNum2");
 
-    console.log(inputnum1.value);
-    console.log(inputnum2.value);
-    let result = parseFloat(inputnum1.value) + parseFloat(inputnum2.value);
-    document.getElementById("outPut").innerText = "Out Put Is = " + result;
-    console.log(result);
+//     console.log(inputnum1.value);
+//     console.log(inputnum2.value);
+//     let result = parseFloat(inputnum1.value) + parseFloat(inputnum2.value);
+//     document.getElementById("outPut").innerText = "Out Put Is = " + result;
+//     console.log(result);
+
+// }
+
+// function btnSubtractOnAction(){
+//     let inputnum1 = document.getElementById("txtNum1");
+//     let inputnum2 = document.getElementById("txtNum2");
+
+//     console.log(inputnum1.value);
+//     console.log(inputnum2.value);
+//     let result = parseFloat(inputnum1.value) - parseFloat(inputnum2.value);
+//     document.getElementById("outPut").innerText = "Out Put Is = " + result;
+//     console.log(result);
+// }
+
+
+// ---------- Customer Form APP -----------------
+
+let customerList = [];
+function btnSubmitOnAction() {
+
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+   let customer = {
+         name:txtName,
+         address:txtAddress,
+         age:txtAge,
+         email:txtEmail,
+         salary:txtSalary
+   }
+   console.log(customer);
+   customerList.push(customer);
+   console.log(customerList);
+   btnLoadTableOnAction();
+   resetInputFields();
+}
+// function btnLoadTableOnAction(){
+//    let tblCustomer = document.getElementById("tblCustomer");
+
+//    tblCustomer.innerHTML += `
+//         <tr>
+//             <td>Saman</td>
+//             <td>Colombo</td>
+//             <td>25</td>
+//             <td>saman@example.com</td>
+//             <td>50000</td>
+//         </tr>
+//    `
+// }
+
+
+function btnLoadTableOnAction() {
+     let tblCustomer = document.getElementById("tblCustomer");
+
+     let body = "";
+
+     for (let i = 0; i < customerList.length; i++) {
+            body += `
+        <tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+         </tr>
+       `
+     }
+     tblCustomer.innerHTML = body;
+
 
 }
 
-function btnSubtractOnAction(){
-    let inputnum1 = document.getElementById("txtNum1");
-    let inputnum2 = document.getElementById("txtNum2");
-
-    console.log(inputnum1.value);
-    console.log(inputnum2.value);
-    let result = parseFloat(inputnum1.value) - parseFloat(inputnum2.value);
-    document.getElementById("outPut").innerText = "Out Put Is = " + result;
-    console.log(result);
+function resetInputFields() {
+    document.getElementById("txtName").value = "";
+    document.getElementById("txtAddress").value = "";
+    document.getElementById("txtAge").value = "";
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("txtSalary").value = "";
 }
